@@ -1,6 +1,6 @@
 <template lang="pug">
   header
-    .header__inner.container
+    .header__inner
       .header__topmenu
         a.header__topmenu__item(href="#") Activities
         a.header__topmenu__item(href="#") Tops

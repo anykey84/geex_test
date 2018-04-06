@@ -9,9 +9,9 @@
           .product-gallery__color-picker
             input.product-gallery__color-picker__item-selected(type="text", placeholder="Pick a color")
           .product-gallery__count-selector
-            .product-gallery__count-selector-button-minus -
+            .product-gallery__count-selector-button -
             .product-gallery__counter 1
-            .product-gallery__count-selector-button-plus +
+            .product-gallery__count-selector-button +
         .product-gallery__addtocart.double-button
           .double-button__inner Add to cart
       .product-gallery__images
