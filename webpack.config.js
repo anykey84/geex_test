@@ -1,5 +1,6 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: './src/main.js',
@@ -28,9 +29,25 @@ module.exports = {
       {
         test: /\.sass$/,
         use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader?indentedSyntax'
+          {
+            loader: 'vue-style-loader'
+          },
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                autoprefixer({
+                  browsers:['ie >= 10', 'last 4 version']
+                })
+              ]
+            }
+          },
+          {
+            loader: 'sass-loader?indentedSyntax'
+          }
         ],
       },
       {
@@ -62,6 +79,13 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
