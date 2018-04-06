@@ -2,10 +2,12 @@
   #app(v-scroll="onScroll")
     .container
       Header
+    ProductGallery
 </template>
 
 <script>
 import Header from './components/Header/Header.vue'
+import ProductGallery from './components/ProductGallery/ProductGallery.vue'
 import './App.sass'
 
 export default {
@@ -16,7 +18,8 @@ export default {
     }
   },
   components: {
-    Header
+    Header,
+    ProductGallery
   },
   methods: {
     onScroll () {

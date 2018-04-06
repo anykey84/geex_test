@@ -1,9 +1,11 @@
 header
-  padding: 47px 0
+  padding: 44px 0
   position: fixed
   top: 0
   left: 0
   width: 100%
+  z-index: 1
+  background-color: #ffffff
 
   .header__inner
     position: relative
@@ -19,12 +21,22 @@ header
       .header__topmenu__item
         margin-left: 50px
         font-size: 10px
+        letter-spacing: 4px
+        color: #0b0b0b
 
     .header__shopping-cart
       flex-grow: 1
       display: flex
       justify-content: flex-end
       font-size: 10px
+      align-items: center
+      .header__shopping-cart__count
+        width: 32px
+        height: 32px
+        border: solid 1px #000000
+        border-radius: 50%
+        margin-left: 10px
+        line-height: 32px
 
     .header__logo
       position: absolute

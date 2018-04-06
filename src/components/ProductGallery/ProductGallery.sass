@@ -1,0 +1,92 @@
+.product-gallery
+  background-image: url('../../assets/images/rectangle5.png')
+  background-position: right center
+  background-size: cover
+  background-repeat: no-repeat
+  margin-right: 39%
+  padding: 40px 0
+  .product-gallery__inner
+    padding: 105px 0 105px 100px
+    background-color: rgba(253, 197, 143, 0.47)
+    margin-right: -50px
+    margin-left: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .product-gallery__images
+      .product-gallery__images__item
+        width: 422px
+        display: none
+        transition: 300ms
+        margin-left: auto
+        margin-right: -210px
+        &.active
+          display: block
+  .product-gallery__product-description
+    text-align: left
+    max-width: 450px
+    .product-gallery__title-label
+      font-size: 12px
+      text-transform: uppercase
+      letter-spacing: 12px
+    .product-gallery__title
+      letter-spacing: 12px
+      font-size: 35px
+      text-transform: uppercase
+      line-height: 35px
+      margin-top: 5px
+    .product-gallery__description
+      line-height: 1.79
+      letter-spacing: 1px
+      font-size: 14px
+      color: #0b0b0b
+      font-family: 'SofiaPro', sans-serif
+      margin-top: 5px
+    .product-gallery__options-selectors
+      display: flex
+      margin-bottom: 40px
+      .product-gallery__color-picker
+        flex-grow: 1
+        display: flex
+        justify-content: space-between
+        .product-gallery__color-picker__item-selected
+          flex-grow: 1
+          background-color: transparent
+          border-top: 0
+          border-right: 0
+          border-left: 0
+          border-bottom: 1px solid #000000
+          line-height: 2.17
+          letter-spacing: 4px
+          color: #0b0b0b
+          font-size: 12px
+          text-transform: uppercase
+          outline: 0
+          &::placeholder
+            color: #000000
+      .product-gallery__count-selector
+        display: flex
+        margin-left: 35px
+        .product-gallery__count-selector-button-minus
+          width: 35px
+          height: 35px
+          border-radius: 50%
+          border: 1px solid #0b0b0b
+          line-height: 32px
+          text-align: center
+          font-weight: bold
+          cursor: pointer
+        .product-gallery__counter
+          text-align: center
+          line-height: 35px
+          margin: 0 20px
+        .product-gallery__count-selector-button-plus
+          width: 35px
+          height: 35px
+          border-radius: 50%
+          border: 1px solid #ffffff
+          background-color: #ffffff
+          line-height: 35px
+          text-align: center
+          font-weight: bold
+          cursor: pointer

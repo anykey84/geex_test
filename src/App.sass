@@ -4,7 +4,14 @@
   font-family: 'FuturaPT-Book'
   src: url('./assets/fonts/FuturaPT-Book.eot')
   src: url('./assets/fonts/FuturaPT-Book.eot?#iefix') format("embedded-opentype"), url('./assets/fonts/FuturaPT-Book.woff2') format("woff2"), url('./assets/fonts/FuturaPT-Book.woff') format("woff")
-  font-weight: 500
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'SofiaPro'
+  src: url('./assets/fonts/SofiaProLight.eot')
+  src: url('./assets/fonts/SofiaProLight.eot?#iefix') format("embedded-opentype"), url('./assets/fonts/SofiaProLight.woff') format("woff")
+  font-weight: 300
   font-style: normal
 
 body
@@ -30,3 +37,48 @@ body
   margin-right: auto
   margin-left: auto
   max-width: 1780px
+
+.double-button
+  height: 50px
+  display: inline-block
+  .double-button__inner
+    box-sizing: border-box
+    width: 223px
+    height: 53px
+    position: relative
+    line-height: 53px
+    text-align: center
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: bold
+    transition: 500ms
+    &:before
+      position: absolute
+      width: 211px
+      height: 41px
+      content: ""
+      left: 0
+      top: 0
+      border: 2px solid #000000
+    &:after
+      position: absolute
+      width: 211px
+      height: 41px
+      content: ""
+      right: 0
+      bottom: 0
+      border: 2px solid #000000
+  &:hover
+    .double-button__inner
+      color: #ffffff
+      background-color: #000000
+      margin: 5px 0 0 5px
+      width: 213px
+      height: 43px
+      line-height: 43px
+      &:before, &:after
+        color: #ffffff
+        top: 0
+        left: 0
+        right: inherit
+        bottom: inherit
