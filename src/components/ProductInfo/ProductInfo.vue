@@ -5,6 +5,9 @@
         .product-info__photo
           img.product-info__photo_image(src="../../assets/images/rectangle6.png")
       .product-info__col-right
+        .product-info__title-label BIKINI INFO
+        .product-info__title MYKONOS
+
     .product-info__materials
       .product-info__col-left
       .product-info__col-right

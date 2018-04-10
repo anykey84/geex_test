@@ -13,11 +13,12 @@
   .product-info__col-left
     margin-right: 150px
     margin-left: 200px
+    flex-basis: 50%
+    flex-grow: 1
 
     .product-info__photo
       max-width: 445px
       padding: 0 45px 80px 0
-      background-size: 100% auto
       position: relative
       &:before
         content: ""
@@ -36,17 +37,19 @@
   .product-info__col-right
     margin-left: 150px
     margin-right: 200px
+    flex-basis: 50%
+    flex-grow: 1
+    text-align: left
 
     .product-info__photo
       max-width: 445px
-      padding: 0 45px 80px 0
-      background-size: 100% auto
+      padding: 80px 0 0 45px
       position: relative
       &:before
         content: ""
         position: absolute
-        top: 0
-        left: 0
+        top: -80px
+        left: -45px
         background-repeat: no-repeat
         background-size: cover
         background-image: url("../../assets/images/rectangle5.png")
@@ -54,6 +57,17 @@
         height: 100%
         z-index: -10
         background-position: 45px 80px
+
+    .product-info__title-label
+      letter-spacing: 12px
+      font-size: 12px
+      font-weight: 500
+
+    .product-info__title
+      letter-spacing: 12px
+      font-size: 35px
+      font-weight: 500
+      line-height: 35px
 
   .product-info__photo_image
     width: 400px

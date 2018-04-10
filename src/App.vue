@@ -4,12 +4,14 @@
       Header
     ProductGallery
     ProductInfo
+    RelatedItems
 </template>
 
 <script>
 import Header from './components/Header/Header.vue'
 import ProductGallery from './components/ProductGallery/ProductGallery.vue'
 import ProductInfo from './components/ProductInfo/ProductInfo.vue'
+import RelatedItems from './components/RelatedItems/RelatedItems.vue'
 import './App.sass'
 
 export default {
@@ -22,7 +24,8 @@ export default {
   components: {
     Header,
     ProductGallery,
-    ProductInfo
+    ProductInfo,
+    RelatedItems
   },
   methods: {
     onScroll () {
