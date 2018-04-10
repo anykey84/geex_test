@@ -1,17 +1,57 @@
 .related-items
+  padding: 0 100px
+
+  .related-items__header
+    font-size: 50px
+    line-height: 1.4
+    letter-spacing: 20px
+    font-weight: bold
+
+  .related-items__inner
+    position: relative
+
+  .related-items__arrow-left
+    position: absolute
+    height: 100%
+    left: 0
+    top: 0
+
+  .related-items__arrow-right
+    position: absolute
+    height: 100%
+    right: 0
+    top: 0
+
+  .related-items__gallery
+    margin: 60px 0
+
   .swiper-wrapper
-    display: flex
-    height: 654px
-    align-items: center
+    .swiper-slide
+      height: 700px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      img
+        transition: 300ms
+        max-width: 227px
+      .related-items__item-name, .related-items__item-collection
+        opacity: 0
+        transition: 300ms
 
-  .swiper-slide
-    transition: 300ms
-    flex-basis: 33%
-    height: 350px !important
-    img
-      height: 100%
-      transition: 300ms
+    .swiper-slide-active
+      img
+        max-width: 100%
+      .related-items__item-name, .related-items__item-collection
+        opacity: 1
 
-  .swiper-slide-active
-    height: 100% !important
+  .related-items__item-name
+    line-height: 1.7
+    font-size: 14px
+    color: #000
 
+  .related-items__item-collection
+    font-family: SofiaPro, sans-serif
+    line-height: 2
+    letter-spacing: 1px
+    font-size: 12px

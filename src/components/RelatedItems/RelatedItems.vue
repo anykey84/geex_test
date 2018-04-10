@@ -1,18 +1,35 @@
 <template lang="pug">
   .related-items
-    swiper(:options="swiperOption")
-      swiper-slide
-        img.related-items__slide-image(src="../../assets/images/rectangle1.png")
-      swiper-slide
-        img.related-items__slide-image(src="../../assets/images/rectangle2.png")
-      swiper-slide
-        img.related-items__slide-image(src="../../assets/images/rectangle4.png")
-      swiper-slide
-        img.related-items__slide-image(src="../../assets/images/rectangle1.png")
-      swiper-slide
-        img.related-items__slide-image(src="../../assets/images/rectangle2.png")
-      swiper-slide
-        img.related-items__slide-image(src="../../assets/images/rectangle4.png")
+    .related-items__header RELATED ITEMS
+    .related-items__inner
+      .related-items__arrow-left prev
+      .related-items__gallery
+        swiper(:options="swiperOption")
+          swiper-slide
+            img.related-items__slide-image(src="../../assets/images/rectangle2.png")
+            .related-items__item-name BATHING SUIT 1 — $55
+            .related-items__item-collection New Swimwear Collection
+          swiper-slide
+            img.related-items__slide-image(src="../../assets/images/rectangle2.png")
+            .related-items__item-name BATHING SUIT 1 — $55
+            .related-items__item-collection New Swimwear Collection
+          swiper-slide
+            img.related-items__slide-image(src="../../assets/images/rectangle2.png")
+            .related-items__item-name BATHING SUIT 1 — $55
+            .related-items__item-collection New Swimwear Collection
+          swiper-slide
+            img.related-items__slide-image(src="../../assets/images/rectangle2.png")
+            .related-items__item-name BATHING SUIT 1 — $55
+            .related-items__item-collection New Swimwear Collection
+          swiper-slide
+            img.related-items__slide-image(src="../../assets/images/rectangle2.png")
+            .related-items__item-name BATHING SUIT 1 — $55
+            .related-items__item-collection New Swimwear Collection
+          swiper-slide
+            img.related-items__slide-image(src="../../assets/images/rectangle2.png")
+            .related-items__item-name BATHING SUIT 1 — $55
+            .related-items__item-collection New Swimwear Collection
+      .related-items__arrow-right next
 
 
 </template>
@@ -40,7 +57,7 @@
           },
           slidesPerView: 3,
           centeredSlides: true,
-          loop: true
+          spaceBetween: 50
         }
       }
     }
