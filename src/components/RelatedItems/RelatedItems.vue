@@ -2,7 +2,8 @@
   .related-items
     .related-items__header RELATED ITEMS
     .related-items__inner
-      .related-items__arrow-left prev
+      .related-items__arrow-left
+        span prev item
       .related-items__gallery
         swiper(:options="swiperOption")
           swiper-slide
@@ -29,7 +30,8 @@
             img.related-items__slide-image(src="../../assets/images/rectangle2.png")
             .related-items__item-name BATHING SUIT 6 — $655
             .related-items__item-collection New Swimwear Collection
-      .related-items__arrow-right next
+      .related-items__arrow-right
+        span next item
     .related-items__view-item.double-button
       .double-button__inner view item
 

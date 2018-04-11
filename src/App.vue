@@ -5,6 +5,7 @@
     ProductGallery
     ProductInfo
     RelatedItems
+    Footer
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import Header from './components/Header/Header.vue'
 import ProductGallery from './components/ProductGallery/ProductGallery.vue'
 import ProductInfo from './components/ProductInfo/ProductInfo.vue'
 import RelatedItems from './components/RelatedItems/RelatedItems.vue'
+import Footer from './components/Footer/Footer.vue'
 import './App.sass'
 
 export default {
@@ -25,7 +27,8 @@ export default {
     Header,
     ProductGallery,
     ProductInfo,
-    RelatedItems
+    RelatedItems,
+    Footer
   },
   methods: {
     onScroll () {
